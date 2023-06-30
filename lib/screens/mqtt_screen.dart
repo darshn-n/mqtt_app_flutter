@@ -297,9 +297,9 @@ class _MQTTScreenState extends State<MQTTScreen> {
   void _configureAndConnect() {
     // ignore: flutter_style_todos
     // TODO: Use UUID
-    String osPrefix = 'Shah Rukh';
+    String osPrefix = 'Mysore';
     if (Platform.isAndroid) {
-      osPrefix = 'Darshan';
+      osPrefix = 'Bangalore';
     }
     manager = MQTTManager(
         host: _hostTextController.text,
@@ -315,9 +315,9 @@ class _MQTTScreenState extends State<MQTTScreen> {
   }
 
   void _publishMessage(String text) {
-    String osPrefix = 'Shah Rukh';
+    String osPrefix = 'Mysore';
     if (Platform.isAndroid) {
-      osPrefix = 'Darshan';
+      osPrefix = 'Bangalore';
     }
     final String message = '$osPrefix : $text';
     manager.publish(
